@@ -1,0 +1,193 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+.header{
+    background-color: rgba(220, 112, 230, 0.719);
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    
+}
+.header div{
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.logo{
+    font-weight: 600;
+    font-size: larger;
+    /* font-family: 'Akronim', cursive; */
+    flex: 1;
+}
+.selected{
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}
+.main{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(235, 188, 128, 0.884);
+    padding-top: 150px;
+    padding-left: 80px;
+    padding-right: 80px;
+    /* padding-bottom: 40px; */
+    font-size: x-large;
+    font-family: 'Raleway', sans-serif;
+}
+.mainHeading{
+    font-size: 40px;
+    color: rgb(109, 101, 101);
+}
+.mainContent{
+    font-size: 25px;
+    max-width: 700px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.hand{
+    display: inline-block;
+    animation: wiggle 0.4s infinite;
+}
+@keyframes wiggle{
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(7deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-7deg);}
+    100% {transform: rotate(0deg);}
+}
+button{
+    margin: 5px;
+    height: 50px;
+    width: 180px;
+    padding: 5px 5px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(33, 37, 37);
+    background: none;
+    border: 2px solid rgb(10, 20, 20);
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: 0;
+    border-radius: 25px;
+    text-align: center;
+    /* justify-content: center; */
+}
+.sqbutton{
+    width: 50px;
+    
+}
+.skills{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 20px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+
+}
+.skillHeading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;    
+    color: black;
+    
+    padding-bottom: 20px;
+}
+.skillsContent{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(22, 22, 22);
+    
+}
+.asdf{
+    padding: 80px;
+    
+    justify-content: space-evenly;
+    padding-left: 30px;
+    flex-wrap: wrap;
+    
+  
+
+}
+.progressbar{
+    
+    display: inline-block;
+   
+    flex-direction: column;
+    
+    padding-bottom: 15px;
+    padding-left: 50px;
+
+}
+.progressHeading{
+    padding-bottom: 10px;
+    font-weight: 600px; 
+}
+.progressBarGrey{
+    height: 10px;
+    width: 250px;
+    background-color: grey;
+    border-radius: 4px;
+    
+}
+.progressBarYellow{
+    height: 10px;
+    width: 50%;
+    background-color: gold;
+    border-radius: 4px;
+}
+.liveActivity{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display:flex;
+    width: 600px;
+    margin: auto;
+    justify-content: space-evenly;
+
+}
+.miniActivity{
+    width: 200px;
+    border-top: 6px solid rgb(243, 124, 124);
+    border-radius: 7px;
+    box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.67);
+-webkit-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.67);
+-moz-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.67);
+padding-top: 10px;
+}
+
+.projectBox{
+    padding-top: 40px;    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+    
+    
+}
+.projectContent{
+    width: 250px;
+    height: 200px;
+    background-color: gray;
+    margin-left: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.footer{
+    text-align: center;
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+ }
