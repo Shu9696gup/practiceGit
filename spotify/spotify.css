@@ -8,6 +8,9 @@ body{
 }
 nav{
     font-family: 'Arimo', sans-serif;
+    box-shadow: 0px 5px 12px -2px rgba(0,0,0,0.71);
+-webkit-box-shadow: 0px 5px 12px -2px rgba(0,0,0,0.71);
+-moz-box-shadow: 0px 5px 12px -2px rgba(0,0,0,0.71);
     
     
 }
@@ -29,6 +32,7 @@ nav ul li{
     font-weight: 500;
     font-size: 1.3rem;
     color: white;
+    
    
 }
 .logo img{
@@ -46,6 +50,10 @@ nav ul li{
     width: 60%;
     margin: 15px auto;    
     padding: 20px;
+    border-radius:30px ;
+    box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.79);
+-webkit-box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.79);
+-moz-box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.79);
     background-image: url('./bg3.jpg');
     /* opacity: .6; */
 }
@@ -59,6 +67,9 @@ nav ul li{
     justify-content: center;
     align-items: center;
     flex-direction: column; 
+    box-shadow: 0px -3px 12px -1px rgba(0,0,0,0.71);
+-webkit-box-shadow: 0px -3px 12px -1px rgba(0,0,0,0.71);
+-moz-box-shadow: 0px -3px 12px -1px rgba(0,0,0,0.71);
 }
 .icons{
     margin-top: 14px; 
@@ -71,27 +82,42 @@ nav ul li{
 
 #progressBar{
     width: 75vw;
+    cursor: pointer;
    
 }
+.songList h1{
+    margin-bottom: 30px;
+}
 .songItem{
-    width: 315px;
+    width: 70%;
     height: 50px;
-    display: flex;    
+    display: flex;  
+    justify-content: space-between;  
     align-items: center;
-    background-color: rgba(0, 255, 255, 0.884);
+    background-color: rgba(0, 255, 255, 0.616);
+    box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.71);
+-webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.71);
+-moz-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.71);
     border-radius: 25px;
+    flex: 1;
+    /* margin-top: 30px; */
+    margin: 20px 0px;
 }
 
 .songItem span{
 padding-left: 10px;
 }
+.gifPlay{
+    opacity: 0;
+    transition: opacity .4s ease-in;
+}
 .time{
     margin: 0px 15px;
 }
 .songItem img{
-    width: 30px;
-    border-radius: 15px;
-    padding-left: 20px;
+    width: 40px;
+    border-radius: 20px;
+    margin-left: 10px;
 
 }
 .songListPlay{
@@ -101,5 +127,12 @@ padding-left: 10px;
     align-items: center;
     margin-right: 10px;
 
+}
+.songListPlay i{
+    cursor: pointer;
+}
+.gif{
+    position: absolute;
+    left: 13vw;
 }
 
